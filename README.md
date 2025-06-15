@@ -4,9 +4,12 @@ The goals of this project.
 
 ## Contributors
 |組員|系級|學號|工作分配|
+|組員|系級|學號|工作分配|
 |-|-|-|-|
-|何大南|資科碩二|110753202|團隊中的吉祥物🦒，負責增進團隊氣氛| 
-|張小明|資科碩二|xxxxxxxxx|團隊的中流砥柱，一個人打十個|
+|王雅麗|資科碩專一|113971009|資料預處理、Random Forest模型訓練、簡報說明| 抓資料.....
+|謝叔容|資科碩專一|113971010|投影片製作、SVM模型訓練|
+|林才樞|資科碩專一|113971018|ShinyApp製作、GLM模型訓練|
+|李嘉境|資科碩專一|113971014|README製作、Decision Tree模型訓練|
 
 ## Quick start
 Please provide an example command or a few commands to reproduce your analysis, such as the following R script:
