@@ -23,7 +23,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 ### docs
 * Your presentation, 1132_DS-FP_groupID.ppt/pptx/pdf (i.e.,1132_DS-FP_group1.ppt), by **06.10**
 * Any related document for the project, i.e.,
-  * discussion log
+* discussion log
   * 4月26日 會議討論：
     * 網路爬蟲資料擷取分工與程式撰寫
   * 5月01日 會議討論：
@@ -39,7 +39,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
     * 訂定APP使用者介面選單
   * 6月15日 會議討論：
     * 簡報呈現內容以及報告角色分配
-  * software user guide
+* software user guide
 
 ### data
 * 交通部高速公路局開放資料
@@ -57,19 +57,23 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 * 預處理重點：
   * 缺失值補齊
   * 異常值排除
-  * 欄位 one-hot 編碼
+  * 特徵工程
+  * 欄位資料型態編碼轉換
   * 時間對齊
 
 ### code
 * Analysis steps
-  1.載入資料
-  2.前處理（含時間、天氣、分類欄位 dummy）
-  3.訓練/測試集切分（80/20）
-  4.各類機器學習模型訓練（Decision Tree, Random Forest, SVM, GLM）
-  5.指標計算與可視化（R²、MAE、RMSE、MSE）
-  6.圖表/模型檔輸出
+  #####  1.載入資料
+  #####  2.前處理
+  #####  3.訓練/測試集切分
+  #####  4.各類機器學習模型訓練（Decision Tree, Random Forest, SVM, GLM）
+  #####  5.指標計算與可視化（R²、MAE、RMSE、MSE）
+  #####  6.圖表/模型檔輸出
 * Which method or package do you use?
-  * Decision Tree, Random Forest, SVM, GLM
+  * Decision Tree
+  * Random Forest
+  * SVM
+  * GLM
 * How do you perform training and evaluation?
   * 以訓練/測試分割，部分模型可加交叉驗證
 * What is a null model for comparison?
