@@ -1,15 +1,15 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZXf3Hbkv)
-# [GroupID] your project title
+# [Group_2] 國道車流行為 AI 分析與應用
 The goals of this project.
-
+預測國道特定路段未來的旅程時間（Travel Time）
+利用 AI 模型，分析各種可能影響車流行為的因子
 ## Contributors
 |組員|系級|學號|工作分配|
-|組員|系級|學號|工作分配|
 |-|-|-|-|
-|王雅麗|資科碩專一|113971009|資料預處理、Random Forest模型訓練、簡報說明| 抓資料.....
-|謝叔容|資科碩專一|113971010|投影片製作、SVM模型訓練|
-|林才樞|資科碩專一|113971018|ShinyApp製作、GLM模型訓練|
-|李嘉境|資科碩專一|113971014|README製作、Decision Tree模型訓練|
+|王雅麗|資科碩專一|113971009|資料擷取ETagID、資料預處理、Random Forest模型訓練、簡報主講人|
+|謝叔容|資科碩專一|113971010|資料擷取ETagID、投影片製作、SVM模型訓練|
+|林才樞|資科碩專一|113971018|資料擷取VD、ShinyApp製作、GLM模型訓練|
+|李嘉境|資科碩專一|113971014|資料擷取weather、README製作、Decision Tree模型訓練|
 
 ## Quick start
 Please provide an example command or a few commands to reproduce your analysis, such as the following R script:
@@ -27,22 +27,48 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
   * software user guide
 
 ### data
-* Input
-  * Source
-  * Format
-  * Size
+* 交通部高速公路局開放資料
+  * Source: https://freeway2025.tw/
+  * Format: JSON, CSV
+  * Size: 依下載範圍，約數千~數十萬筆資料
+* 中央氣象局氣象開放平台
+  * Source: https://opendata.cwa.gov.tw/index
+  * Format: JSON, CSV
+  * Size: 依下載範圍，約數千~數十萬筆資料
+* 主要欄位：
+  ETagPairID, StartTime, VehicleType, VehicleCount,
+  SpaceMeanSpeed, vd_avg_Speed, vd_avg_Occupancy, vd_avg_Volume,
+  vd_avg_VSpeed, vd_LaneID, vd_week_day, rain, temp, TravelTime
+* 預處理重點：
+  缺失值補齊、異常值排除、欄位 one-hot 編碼、時間對齊
 
 ### code
 * Analysis steps
+  1.載入資料
+  2.前處理（含時間、天氣、分類欄位 dummy）
+  3.訓練/測試集切分（80/20）
+  4.各類機器學習模型訓練（Decision Tree, Random Forest, SVM, GLM）
+  5.指標計算與可視化（R²、MAE、RMSE、MSE）
+  6.圖表/模型檔輸出
 * Which method or package do you use?
 * How do you perform training and evaluation?
-  * Cross-validation, or extra separated data
+  * 以訓練/測試分割，部分模型可加交叉驗證
 * What is a null model for comparison?
 
 ### results
 * What is your performance?
+
+||Random Forest|Decision Tree|SVM|GLM|
+|-|-|-|-|-|
+|MSE|2121.297|1999.2347|15482.44|9330.017|
+|RMSE|46.05754|44.7128|29.01408|96.59201|
+|MAE|26.32841|21.5637|7.896077|40.23153|
+|Pseudo-R^2|0.934948|0.9369|0.9768|0.9078|
+
 * Is the improvement significant?
 
 ## References
 * Packages you use
+  rpart, randomForest, e1071, caret, ggplot2, data.table, Matrix, corrplot …
 * Related publications
+  交通部高速公路局交通資料庫、中央氣象局氣象開放平台
