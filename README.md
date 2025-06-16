@@ -25,20 +25,20 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 * Any related document for the project, i.e.,
   * discussion log
   * 4月26日 會議討論：
-    網路爬蟲資料擷取分工與程式撰寫
+    * 網路爬蟲資料擷取分工與程式撰寫
   * 5月01日 會議討論：
-    資料收集欄位確定、專案目標訂定：旅行時間長度預測
+    * 資料收集欄位確定、專案目標訂定：旅行時間長度預測
   * 5月17日 會議討論：
-    APP選單資料統一格式
+    * APP選單資料統一格式
     預測模型決定與分工
   * 5月20日 會議討論：
-    資料欄位對齊與預處理方式
+    * 資料欄位對齊與預處理方式
   * 5月27日 會議討論：
-    訂定專案產出時程
+    * 訂定專案產出時程
   * 6月04日 會議討論：
-    訂定APP使用者介面選單
+    * 訂定APP使用者介面選單
   * 6月15日 會議討論：
-    簡報呈現內容以及報告角色分配
+    * 簡報呈現內容以及報告角色分配
   * software user guide
 
 ### data
@@ -51,11 +51,14 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
   * Format: JSON, CSV
   * Size: 依下載範圍，約數千~數十萬筆資料
 * 主要欄位：
-  ETagPairID, StartTime, VehicleType, VehicleCount,
+  * ETagPairID, StartTime, VehicleType, VehicleCount,
   SpaceMeanSpeed, vd_avg_Speed, vd_avg_Occupancy, vd_avg_Volume,
   vd_avg_VSpeed, vd_LaneID, vd_week_day, rain, temp, TravelTime
 * 預處理重點：
-  缺失值補齊、異常值排除、欄位 one-hot 編碼、時間對齊
+  * 缺失值補齊
+  * 異常值排除
+  * 欄位 one-hot 編碼
+  * 時間對齊
 
 ### code
 * Analysis steps
@@ -66,6 +69,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
   5.指標計算與可視化（R²、MAE、RMSE、MSE）
   6.圖表/模型檔輸出
 * Which method or package do you use?
+  * Decision Tree, Random Forest, SVM, GLM
 * How do you perform training and evaluation?
   * 以訓練/測試分割，部分模型可加交叉驗證
 * What is a null model for comparison?
@@ -84,6 +88,6 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ## References
 * Packages you use
-  rpart, randomForest, e1071, caret, ggplot2, data.table, Matrix, corrplot …
+  * dplyr, readr, stringr, lubridate, caret, rpart, rpart.plot, ggplot2, data.table, Matrix, corrplot,e1071, randomForest, fastDummies, DescTools, shiny, bslib, shinythemes, shinyTime, formattable
 * Related publications
-  交通部高速公路局交通資料庫、中央氣象局氣象開放平台
+  * 交通部高速公路局交通資料庫、中央氣象局氣象開放平台
