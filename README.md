@@ -24,6 +24,21 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 * Your presentation, 1132_DS-FP_groupID.ppt/pptx/pdf (i.e.,1132_DS-FP_group1.ppt), by **06.10**
 * Any related document for the project, i.e.,
   * discussion log
+  * 4月26日 會議討論：
+    網路爬蟲資料擷取分工與程式撰寫
+  * 5月01日 會議討論：
+    資料收集欄位確定、專案目標訂定：旅行時間長度預測
+  * 5月17日 會議討論：
+    APP選單資料統一格式
+    預測模型決定與分工
+  * 5月20日 會議討論：
+    資料欄位對齊與預處理方式
+  * 5月27日 會議討論：
+    訂定專案產出時程
+  * 6月04日 會議討論：
+    訂定APP使用者介面選單
+  * 6月15日 會議討論：
+    簡報呈現內容以及報告角色分配
   * software user guide
 
 ### data
