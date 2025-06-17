@@ -22,6 +22,9 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ### docs
 * Your presentation, 1132_DS-FP_groupID.ppt/pptx/pdf (i.e.,1132_DS-FP_group1.ppt), by **06.10**
+ ** https://www.figma.com/slides/CpFowkZFSSdrX1SqpmuIVY/GROUP2%E5%9C%8B%E9%81%93%E8%BB%8A%E6%B5%81%E8%A1%8C%E7%82%BA%C2%A0-AI%C2%A0%E5%88%86%E6%9E%90%E8%88%87%E6%87%89%E7%94%A8?node-id=1-350&t=30HT5h0qqCQGhqYo-0
+* ShinyAPP
+ ** https://sam-113971018.shinyapps.io/FinalProject-2/
 * Any related document for the project, i.e.,
 * discussion log
   * 4月26日 會議討論：
